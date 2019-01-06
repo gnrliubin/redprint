@@ -1,10 +1,13 @@
-from . import bp_v1
 
-@bp_v1.route("/token/get")
+from app.libs.redprint import RedPrint
+
+api = RedPrint('token')
+
+@api.route("/get")
 def get():
-    return "v1-token-get1"
+    return "v1-token-get11"
 
 
-@bp_v1.route('/token/post')
+@api.route('/post')
 def post():
     return "v1-token-post"

@@ -1,9 +1,12 @@
-from . import bp_v1
 
-@bp_v1.route('/user/get',endpoint='getuser')
-def get():
+from app.libs.redprint import RedPrint
+
+api = RedPrint('user')
+
+@api.route('/get')
+def get_user():
     return "v1-user-get"
 
-@bp_v1.route('/user/post',endpoint='postuser')
-def post():
+@api.route('/post')
+def change_user():
     return "v1-user-post"
