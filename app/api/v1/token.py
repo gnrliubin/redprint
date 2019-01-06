@@ -5,7 +5,7 @@ api = RedPrint('token')
 
 @api.route("/get")
 def get():
-    return "v1-token-get11"
+    return __name__
 
 
 @api.route('/post')

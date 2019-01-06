@@ -1,4 +1,6 @@
-
+'''
+定义红图类
+'''
 
 class RedPrint():
     def __init__(self,name):
